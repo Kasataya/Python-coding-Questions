@@ -1,0 +1,16 @@
+#Vowel and consonants count function 
+
+def word():
+    word = input ("Enter a string: ")
+    word_lower = word.lower()
+    vowels = "aeiou"
+    count1 = 0
+    count2 = 0
+    for i in word_lower:
+        if i in vowels:
+            count1 +=1
+        else:
+            count2 +=1
+    print ("The string you entered includes",count1,"vowels and",count2,"consonants")
+
+word()
